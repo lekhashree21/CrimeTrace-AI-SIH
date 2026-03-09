@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec183e7164dd3c0357f6714002ffa3dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec183e7164dd3c0357f6714002ffa3dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec183e7164dd3c0357f6714002ffa3dd = L.map(
+                "map_ec183e7164dd3c0357f6714002ffa3dd",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bce578ab8f717929b36630023f6b995f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bce578ab8f717929b36630023f6b995f.addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var circle_marker_aafb83b1c8c52779a593696bb4c5672f = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+        var popup_7285b06af216523063e920805aaada29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_773493425f6c0b78fcf6e59c09a0a83d = $(`<div id="html_773493425f6c0b78fcf6e59c09a0a83d" style="width: 100.0%; height: 100.0%;">City Center — 45 ATMs</div>`)[0];
+                popup_7285b06af216523063e920805aaada29.setContent(html_773493425f6c0b78fcf6e59c09a0a83d);
+            
+        
+
+        circle_marker_aafb83b1c8c52779a593696bb4c5672f.bindPopup(popup_7285b06af216523063e920805aaada29)
+        ;
+
+        
+    
+    
+            var marker_d8c77b38400a8fce6a61208b9a7dbd70 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var icon_fd8788b28c9cb35dc440dfb95b21ed7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fb8ee23c07a7cd2f6d1f8473c6c5a97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_629b0720bd9bb91486b7819d1f2fb7dd = $(`<div id="html_629b0720bd9bb91486b7819d1f2fb7dd" style="width: 100.0%; height: 100.0%;">City Center</div>`)[0];
+                popup_7fb8ee23c07a7cd2f6d1f8473c6c5a97.setContent(html_629b0720bd9bb91486b7819d1f2fb7dd);
+            
+        
+
+        marker_d8c77b38400a8fce6a61208b9a7dbd70.bindPopup(popup_7fb8ee23c07a7cd2f6d1f8473c6c5a97)
+        ;
+
+        
+    
+    
+                marker_d8c77b38400a8fce6a61208b9a7dbd70.setIcon(icon_fd8788b28c9cb35dc440dfb95b21ed7f);
+            
+    
+            var circle_marker_528c8c59b07e61d4f8e3d1e9fda274e7 = L.circleMarker(
+                [12.9352, 77.6245],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+        var popup_3c5bf0a3c40b584b23d6a8c795b60235 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1f6d78875d92a709212a8020676bbd3 = $(`<div id="html_d1f6d78875d92a709212a8020676bbd3" style="width: 100.0%; height: 100.0%;">East Zone — 32 ATMs</div>`)[0];
+                popup_3c5bf0a3c40b584b23d6a8c795b60235.setContent(html_d1f6d78875d92a709212a8020676bbd3);
+            
+        
+
+        circle_marker_528c8c59b07e61d4f8e3d1e9fda274e7.bindPopup(popup_3c5bf0a3c40b584b23d6a8c795b60235)
+        ;
+
+        
+    
+    
+            var marker_c2526812a33f945dc1b5b49192ecc72e = L.marker(
+                [12.9352, 77.6245],
+                {
+}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var icon_bc4108730453b996db7b8ece042ee686 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f9de82465ceb26edefe57ba17b187b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_049bfbdd6fd7084ba951e90f863bf6b0 = $(`<div id="html_049bfbdd6fd7084ba951e90f863bf6b0" style="width: 100.0%; height: 100.0%;">East Zone</div>`)[0];
+                popup_4f9de82465ceb26edefe57ba17b187b2.setContent(html_049bfbdd6fd7084ba951e90f863bf6b0);
+            
+        
+
+        marker_c2526812a33f945dc1b5b49192ecc72e.bindPopup(popup_4f9de82465ceb26edefe57ba17b187b2)
+        ;
+
+        
+    
+    
+                marker_c2526812a33f945dc1b5b49192ecc72e.setIcon(icon_bc4108730453b996db7b8ece042ee686);
+            
+    
+            var circle_marker_13982cfc493a5912020078408e315b91 = L.circleMarker(
+                [13.0012, 77.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+        var popup_f8896b98820fcf888f2a6e68b232b7d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cada9388e8e7a85f2a952bb5f27c8227 = $(`<div id="html_cada9388e8e7a85f2a952bb5f27c8227" style="width: 100.0%; height: 100.0%;">North Zone — 28 ATMs</div>`)[0];
+                popup_f8896b98820fcf888f2a6e68b232b7d3.setContent(html_cada9388e8e7a85f2a952bb5f27c8227);
+            
+        
+
+        circle_marker_13982cfc493a5912020078408e315b91.bindPopup(popup_f8896b98820fcf888f2a6e68b232b7d3)
+        ;
+
+        
+    
+    
+            var marker_5275214c0ef7faf789b42dbef1031d92 = L.marker(
+                [13.0012, 77.58],
+                {
+}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var icon_bbbe8e1f386e0d10a606d6c5709335f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28c4e0dd9dad70ec0fd3e57017383c1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7e8936dfd09f2bb81d26a903d29fa0f = $(`<div id="html_b7e8936dfd09f2bb81d26a903d29fa0f" style="width: 100.0%; height: 100.0%;">North Zone</div>`)[0];
+                popup_28c4e0dd9dad70ec0fd3e57017383c1f.setContent(html_b7e8936dfd09f2bb81d26a903d29fa0f);
+            
+        
+
+        marker_5275214c0ef7faf789b42dbef1031d92.bindPopup(popup_28c4e0dd9dad70ec0fd3e57017383c1f)
+        ;
+
+        
+    
+    
+                marker_5275214c0ef7faf789b42dbef1031d92.setIcon(icon_bbbe8e1f386e0d10a606d6c5709335f3);
+            
+    
+            var circle_marker_a4f629b7d18294a13faa87969cacc507 = L.circleMarker(
+                [12.91, 77.61],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+        var popup_d7ed0c13530d05dc7f7bc2556c8b4009 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b15173bbc38b370e2296d01df939e4fc = $(`<div id="html_b15173bbc38b370e2296d01df939e4fc" style="width: 100.0%; height: 100.0%;">South Zone — 19 ATMs</div>`)[0];
+                popup_d7ed0c13530d05dc7f7bc2556c8b4009.setContent(html_b15173bbc38b370e2296d01df939e4fc);
+            
+        
+
+        circle_marker_a4f629b7d18294a13faa87969cacc507.bindPopup(popup_d7ed0c13530d05dc7f7bc2556c8b4009)
+        ;
+
+        
+    
+    
+            var marker_e0c9e29fc113f05a17b07294b1e062cb = L.marker(
+                [12.91, 77.61],
+                {
+}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var icon_010b7207b2254315521ff3c114e73b66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_052e915dfb4b7cc459c79cbeb1377101 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae1e144adf2e11657cbdfac21a45fbdb = $(`<div id="html_ae1e144adf2e11657cbdfac21a45fbdb" style="width: 100.0%; height: 100.0%;">South Zone</div>`)[0];
+                popup_052e915dfb4b7cc459c79cbeb1377101.setContent(html_ae1e144adf2e11657cbdfac21a45fbdb);
+            
+        
+
+        marker_e0c9e29fc113f05a17b07294b1e062cb.bindPopup(popup_052e915dfb4b7cc459c79cbeb1377101)
+        ;
+
+        
+    
+    
+                marker_e0c9e29fc113f05a17b07294b1e062cb.setIcon(icon_010b7207b2254315521ff3c114e73b66);
+            
+    
+            var circle_marker_965adb79dcbe21fb78185c72a4a24824 = L.circleMarker(
+                [12.96, 77.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 3}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+        var popup_a1d3c4e2c1100d4849b03b68a778a544 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da5b4c10f549d2031a1d385b4353e348 = $(`<div id="html_da5b4c10f549d2031a1d385b4353e348" style="width: 100.0%; height: 100.0%;">West Zone — 22 ATMs</div>`)[0];
+                popup_a1d3c4e2c1100d4849b03b68a778a544.setContent(html_da5b4c10f549d2031a1d385b4353e348);
+            
+        
+
+        circle_marker_965adb79dcbe21fb78185c72a4a24824.bindPopup(popup_a1d3c4e2c1100d4849b03b68a778a544)
+        ;
+
+        
+    
+    
+            var marker_b212e34c4d5a82deb0ba3078b15be9e5 = L.marker(
+                [12.96, 77.7],
+                {
+}
+            ).addTo(map_ec183e7164dd3c0357f6714002ffa3dd);
+        
+    
+            var icon_4f1eb742ff7164a7ae66be56dd68f821 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a07e8ac8a87b8d896971d1cae8a48fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69bf2dfa989c66da330c97bdc639bb82 = $(`<div id="html_69bf2dfa989c66da330c97bdc639bb82" style="width: 100.0%; height: 100.0%;">West Zone</div>`)[0];
+                popup_7a07e8ac8a87b8d896971d1cae8a48fb.setContent(html_69bf2dfa989c66da330c97bdc639bb82);
+            
+        
+
+        marker_b212e34c4d5a82deb0ba3078b15be9e5.bindPopup(popup_7a07e8ac8a87b8d896971d1cae8a48fb)
+        ;
+
+        
+    
+    
+                marker_b212e34c4d5a82deb0ba3078b15be9e5.setIcon(icon_4f1eb742ff7164a7ae66be56dd68f821);
+            
+</script>
+</html>
