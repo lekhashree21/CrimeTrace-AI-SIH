@@ -1,6 +1,6 @@
 #  CrimeTrace AI — Cybercrime Prediction System
 
-> **Smart India Hackathon (SIH) 2024 Project**
+> **Smart India Hackathon (SIH) 2025 Project**
 > AI/ML based Cybercrime Cash Withdrawal Prediction System with **90%+ Accuracy**
 
 ---
