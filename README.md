@@ -1,7 +1,7 @@
 #  CrimeTrace AI — Cybercrime Prediction System
 
 > 
-> AI/ML based Cybercrime Cash Withdrawal Prediction System with **90%+ Accuracy**
+> AI/ML based Cybercrime Cash Withdrawal Prediction System with Accuracy**
 
 ---
 
